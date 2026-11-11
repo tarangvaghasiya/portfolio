@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tarang Vaghasiya — Frontend Developer, AI student and creative builder.">
+  <title>Tarang Vaghasiya | Enter My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <button class="chain" id="themeChain" aria-label="Pull the chain to switch theme" title="Pull down to switch between dark and light themes">
+    <span class="chain-label">PULL TO CHANGE THE LIGHT</span><span class="chain-line"></span><span class="chain-ball"><span></span></span>
+  </button>
+  <header class="topbar"><a class="monogram" href="#home">T<span>V</span><i>.</i></a><div class="topbar-note"><span class="pulse"></span> PORTFOLIO / 2026</div><a class="top-link" href="mailto:tarangvaghasiya.cg@gmail.com">LET'S CONNECT ↗</a></header>
+  <main id="home">
+    <section class="landing">
+      <div class="landing-copy">
+        <p class="kicker">WELCOME TO MY DIGITAL WORLD</p>
+        <h1>Hi, I'm<br><span>Tarang.</span></h1>
+        <div class="role"><span class="role-dot"></span> FRONTEND DEVELOPER <b>·</b> AI STUDENT</div>
+        <p class="tagline">“coding is my karma<br>and consultancy is dharma”</p>
+        <p class="intro">I turn ideas into thoughtful digital experiences — one interface, one experiment and one line of code at a time.</p>
+        <div class="landing-actions"><a href="#doors" class="primary-btn">Explore my world <span>↓</span></a><span class="tiny-note">5 DOORS · 5 STORIES</span></div>
+      </div>
+      <div class="portrait-wrap"><div class="portrait-frame"><img src="assets/profile.jpg" alt="Tarang Vaghasiya"></div><div class="portrait-sticker">DESIGN<br>× CODE<br>× CREATE</div><div class="portrait-caption"><span>01 — THE CREATOR</span><span>SURAT, INDIA</span></div></div>
+      <div class="landing-bottom"><span>SCROLL TO FIND THE DOORS</span><span class="scroll-line"></span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="door-world" id="doors">
+      <div class="section-top"><div><p class="kicker">THE HOUSE OF TARANG</p><h2>Choose a <em>door.</em></h2></div><p class="section-hint">Every door opens a different part of my journey.<br>Pick one and step inside.</p></div>
+      <div class="hallway">
+        <button class="door-card" data-room="about"><span class="door-number">01</span><span class="door-icon">✳</span><span class="door-name">About me</span><span class="door-sub">THE PERSON BEHIND THE PIXELS</span><span class="door-knob"></span><span class="door-open">OPEN DOOR ↗</span></button>
+        <button class="door-card" data-room="skills"><span class="door-number">02</span><span class="door-icon">⌘</span><span class="door-name">My toolkit</span><span class="door-sub">TOOLS I BUILD WITH</span><span class="door-knob"></span><span class="door-open">OPEN DOOR ↗</span></button>
+        <button class="door-card" data-room="projects"><span class="door-number">03</span><span class="door-icon">▧</span><span class="door-name">Projects</span><span class="door-sub">THINGS I'VE MADE</span><span class="door-knob"></span><span class="door-open">OPEN DOOR ↗</span></button>
+        <button class="door-card" data-room="journey"><span class="door-number">04</span><span class="door-icon">✦</span><span class="door-name">Achievements</span><span class="door-sub">MILESTONES & HACKATHONS</span><span class="door-knob"></span><span class="door-open">OPEN DOOR ↗</span></button>
+        <button class="door-card contact-door" data-room="contact"><span class="door-number">05</span><span class="door-icon">↗</span><span class="door-name">Contact</span><span class="door-sub">LET'S BUILD SOMETHING</span><span class="door-knob"></span><span class="door-open">OPEN DOOR ↗</span></button>
+      </div>
+      <p class="hallway-foot">TIP: TAP ANY DOOR TO ENTER <span>✳</span> PULL THE CHAIN ABOVE TO CHANGE THE LIGHT</p>
+    </section>
+  </main>
+
+  <div class="room-backdrop" id="roomBackdrop" aria-hidden="true">
+    <section class="room-panel" role="dialog" aria-modal="true" aria-labelledby="roomTitle">
+      <button class="room-close" id="roomClose" aria-label="Close room">× <span>BACK TO HALL</span></button>
+      <div class="room-content" id="roomContent"></div>
+    </section>
+  </div>
+  <footer class="footer"><a class="monogram" href="#home">T<span>V</span><i>.</i></a><p>MADE WITH CURIOSITY BY TARANG VAGHASIYA</p><div class="socials"><a href="https://github.com/tarangvaghasiya" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/tarang-vaghasiya-5b5b40427/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://www.instagram.com/its_tarang.07" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://leetcode.com/u/tarang_vaghasiya_/" target="_blank" rel="noreferrer">LEETCODE ↗</a></div><small>© <span id="year"></span> TARANG VAGHASIYA</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
